@@ -71,6 +71,7 @@ body {
   }
   #features h3 .lighter {
       background-color: rgb(255, 255, 255);
+      padding: 0.3em;
   }
   #features p {
       font-family: 'Roboto Condensed', sans-serif;
@@ -82,6 +83,7 @@ body {
   #features p .lighter {
       background-color: rgb(255, 255, 255);
       display: block;
+      padding: 1em;
   }
   #features p .below {
       background-color: rgb(255, 255, 255);
@@ -89,6 +91,7 @@ body {
       margin-top: 80%;
       font-style: italic;
       font-size: 26px;
+      padding: 1em;
   }
   #features .imageCredit {
     font-size: 0.9em;
