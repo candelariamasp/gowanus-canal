@@ -210,29 +210,46 @@ map.on("load", function () {
             'data': 'data/superfund_sites.geojson'
         },
         'paint': {
-            'circle-color': '#ff7f50',
-        } 
+            'circle-color': '#ff7f50'
+        }
     }, firstSymbolId);
-    // Add the Median income layer
+
+
     map.addLayer({
-        'id': 'medianIncome',
+        'id': 'superfundsitestext',
+        'type': 'symbol',
+        'source': {
+            'type': 'geojson',
+            'data': 'data/superfund_sites.geojson'
+        },
+        'layout': {
+            'text-field': ['get', 'site_name'],
+            'text-allow-overlap': true,
+            'text-offset': [0, 0.8],
+            'text-anchor': 'top',
+            'text-size': 10
+        },
+        'paint': {
+            'text-color': "#ff7f50"
+        }
+    }, firstSymbolId);
+
+
+
+
+    //Add the waterbodies fill
+    map.addLayer({
+        'id': 'waterbodies',
         'type': 'fill',
         'source': {
             'type': 'geojson',
-            'data': 'data/medianIncome.geojson'
+            'data': 'data/waterbodies_fill.geojson'
         },
-        'opacity': 0,
         'paint': {
-            'fill-color': ['step', ['get', 'MHHI'],
-                '#ffffff',
-                20000, '#ccedf5',
-                50000, '#99daea',
-                75000, '#66c7e0',
-                100000, '#33b5d5',
-                150000, '#00a2ca'],
-            'fill-opacity': 0
-        }
-    }, 'waterway-shadow');
+          'fill-color': '#138b95',
+          'fill-opacity': 0,
+      }
+    }, 'superfundSites');
     // Add the Pop Density layer 
     map.addLayer({
         'id': 'popDensity',
@@ -266,6 +283,19 @@ map.on("load", function () {
             'fill-color':'#3182bd',
             'fill-opacity': 0
         }
+    }, 'waterway-shadow');
+    // Add the Rezoning Layer
+    map.addLayer({
+        'id': 'rezoning',
+        'type': 'fill',
+        'source': {
+            'type': 'geojson',
+            'data': 'data/nyc_rezoningarea.geojson'
+        },
+        'paint': {
+          'fill-color': '#f4fa1a',
+          'fill-opacity': 0,
+      }
     }, 'waterway-shadow');
     // Setup the instance, pass callback functions
     scroller
