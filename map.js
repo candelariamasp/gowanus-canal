@@ -249,7 +249,7 @@ map.on("load", function () {
         },
         'paint': {
           'fill-color': '#138b95',
-          'fill-opacity': 0,
+          'fill-opacity': 0
       }
     }, 'superfundSites');
     // Add the Pop Density layer 
@@ -260,7 +260,6 @@ map.on("load", function () {
             'type': 'geojson',
             'data': 'data/nyc_pop_density.geojson'
         },
-        'opacity': 0,
         'paint': {
             'fill-color': ['step', ['get', 'B03002_TotPop'],
                 '#ffffff',
@@ -280,13 +279,11 @@ map.on("load", function () {
             'type': 'geojson',
             'data': 'data/nyc_zoning.geojson'
         },
-        'opacity': 0,
         'paint': {
             'fill-color':'#D4844A',
             'fill-opacity': 0
         }
     }, 'waterway-shadow');
-
     // Add the NC Manufacturing
     map.addLayer({
         'id': 'ncRezoning',
@@ -295,7 +292,6 @@ map.on("load", function () {
             'type': 'geojson',
             'data': 'data/newtown_rezoning.geojson'
         },
-        'opacity': 0,
         'paint': {
             'fill-color':'#989898',
             'fill-opacity': 0
@@ -322,9 +318,9 @@ map.on("load", function () {
             'type': 'geojson',
             'data': 'data/cso.geojson'
         },
-        'opacity': 0,
         'paint': {
           'circle-color': '#4A1109',
+          'circle-opacity': 0
         }
     }, firstSymbolId);
     // Add the Flooding Layer
@@ -335,10 +331,9 @@ map.on("load", function () {
             'type': 'geojson',
             'data': 'data/gowanus_flooding.geojson'
         },
-        'opacity': 0,
         'paint': {
             'fill-color': '#98d6d2',
-            'fill-opacity': 0,
+            'fill-opacity': 0
         }
     }, firstSymbolId);
 
