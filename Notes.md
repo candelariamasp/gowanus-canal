@@ -1,0 +1,2 @@
+Style URL = mapbox://styles/candelariamasp/ck8ad6zxn0y6y1ipfb4g33chl
+Token = pk.eyJ1IjoiY2FuZGVsYXJpYW1hc3AiLCJhIjoiY2s4OHRpenVuMGNmeDNqbzF1ZmNnN2FwciJ9.e6kBICzbQ_RPjMFy5SgBtw

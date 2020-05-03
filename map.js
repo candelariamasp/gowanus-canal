@@ -123,6 +123,12 @@ config.chapters.forEach((record, idx) => {
         story.innerHTML = record.quote;
         chapter.appendChild(story);
     }
+    // Creates the audio 
+    if (record.audio) {
+        var story = document.createElement('p');
+        story.innerHTML = record.audio;
+        chapter.appendChild(story);
+    }
     // Sets the id for the vignette and adds the step css attribute
     container.setAttribute('id', record.id);
     container.classList.add('step');
@@ -214,7 +220,7 @@ map.on("load", function () {
         }
     }, firstSymbolId);
 
-
+    // Add the labels layer
     map.addLayer({
         'id': 'superfundsitestext',
         'type': 'symbol',
@@ -233,10 +239,6 @@ map.on("load", function () {
             'text-color': "#ff7f50"
         }
     }, firstSymbolId);
-
-
-
-
     //Add the waterbodies fill
     map.addLayer({
         'id': 'waterbodies',
@@ -270,9 +272,9 @@ map.on("load", function () {
             'fill-opacity': 0
         }
     }, 'waterway-shadow');
-    // Add the NYC Zoning layer
+    // Add the NYC Current Residential
     map.addLayer({
-        'id': 'nycZoning',
+        'id': 'nycResidential',
         'type': 'fill',
         'source': {
             'type': 'geojson',
@@ -280,23 +282,66 @@ map.on("load", function () {
         },
         'opacity': 0,
         'paint': {
-            'fill-color':'#3182bd',
+            'fill-color':'#D4844A',
             'fill-opacity': 0
         }
     }, 'waterway-shadow');
-    // Add the Rezoning Layer
+
+    // Add the NC Manufacturing
     map.addLayer({
-        'id': 'rezoning',
+        'id': 'ncRezoning',
         'type': 'fill',
         'source': {
             'type': 'geojson',
-            'data': 'data/nyc_rezoningarea.geojson'
+            'data': 'data/newtown_rezoning.geojson'
+        },
+        'opacity': 0,
+        'paint': {
+            'fill-color':'#989898',
+            'fill-opacity': 0
+        }
+    }, 'waterway-shadow');
+    // Add the GC Rezoning Layer
+    map.addLayer({
+        'id': 'gcRezoning',
+        'type': 'fill',
+        'source': {
+            'type': 'geojson',
+            'data': 'data/gowanus_rezoning.geojson'
         },
         'paint': {
-          'fill-color': '#f4fa1a',
+          'fill-color': '#99532E',
           'fill-opacity': 0,
       }
     }, 'waterway-shadow');
+    // Add CSO points
+    map.addLayer({
+        'id': 'cso',
+        'type': 'circle',
+        'source': {
+            'type': 'geojson',
+            'data': 'data/cso.geojson'
+        },
+        'opacity': 0,
+        'paint': {
+          'circle-color': '#4A1109',
+        }
+    }, firstSymbolId);
+    // Add the Flooding Layer
+    map.addLayer({
+        'id': 'flooding',
+        'type': 'fill',
+        'source': {
+            'type': 'geojson',
+            'data': 'data/gowanus_flooding.geojson'
+        },
+        'opacity': 0,
+        'paint': {
+            'fill-color': '#98d6d2',
+            'fill-opacity': 0,
+        }
+    }, firstSymbolId);
+
     // Setup the instance, pass callback functions
     scroller
         .setup({

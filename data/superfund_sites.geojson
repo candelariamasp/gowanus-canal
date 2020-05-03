@@ -2185,7 +2185,7 @@
         },
         "properties": { 
             "epa_siteID": "NYN000206282", 
-            "site_name": "NEWTON CREEK", 
+            "site_name": "NEWTOWN CREEK", 
             "city": "BROOKLYN, QUEENS", 
             "county": "KINGS, QUEENS", 
             "state": "NY", 
@@ -2318,7 +2318,7 @@
         },
         "properties": { 
             "epa_siteID": "NYN000206222", 
-            "site_name": "GOWANUS CANAL", 
+            "site_name": "GOWANUS CANAL",
             "city": "BROOKLYN", 
             "county": "KINGS", 
             "state": "NY", 
