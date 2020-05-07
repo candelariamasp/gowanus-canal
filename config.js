@@ -388,27 +388,18 @@ var config = {
                 {
                     layer: 'cso',
                     opacity: 1
-                },
-                {
-                    layer: 'gcRezoning',
-                    opacity: 1
-                },
-                {
-                    layer: 'flooding',
-                    opacity: 0.7
                 }
             ],
-            onChapterExit: [
-            ]
+            onChapterExit: []
         },
         {//22
-            id: 'picture9',
+            id: 'picture11',
             title: '<span class="lighter">Gowanus Conclusion</span>',
             description: "<span class='lighter'>The zone has gotten the attraction of billionaire development projects but the toxicity of the water, together with neighbors' safety, fail to be addressed.</span>",
             /*quote: "<span class='below'>“There are moments when the sewage just flows backwards into peoples homes” by a Gowanus neighbor</span>",*/
             location: {},
             onChapterEnter: [],
             onChapterExit: []
-        },
+        }
     ]
 };
