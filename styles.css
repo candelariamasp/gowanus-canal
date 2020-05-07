@@ -169,15 +169,15 @@ body {
     width: 100%;
   }
 
-  #picture2, #picture3, #picture4, #picture5, #picture6, #picture7, #picture8, #picture9, #picture10, #picture11, #picture12, #picture13, #picture14 {
+  #picture2, #picture3, #picture4, #picture5, #picture6, #picture7, #picture8, #picture9, #picture10, #picture11 {
     width: 100%;
   }
 
-  #picture2.step.active, #picture3.step.active, #picture4.step.active, #picture5.step.active, #picture6.step.active , #picture7.step.active, #picture8.step.active, #picture9.step.active, #picture10.step.active, #picture11.step.active, #picture12.step.active, #picture13.step.active, #picture14.step.active {
+  #picture2.step.active, #picture3.step.active, #picture4.step.active, #picture5.step.active, #picture6.step.active , #picture7.step.active, #picture8.step.active, #picture9.step.active, #picture10.step.active, #picture11.step.active {
     opacity: 1;
   }
 
-  #picture2 .light, #picture3 .light, #picture4 .light, #picture5 .light, #picture6 .light, #picture7 .light, #picture8 .light, #picture9 .light, #picture10 .light, #picture11 .light, #picture12 .light, #picture12 .light, #picture13 .light, #picture14 .light {
+  #picture2 .light, #picture3 .light, #picture4 .light, #picture5 .light, #picture6 .light, #picture7 .light, #picture8 .light, #picture9 .light, #picture10 .light, #picture11 .light {
     background-size: cover;
     width: 100%;
     margin-left: -5vw;
@@ -193,8 +193,6 @@ body {
   #picture8 .light {background-image: url("images/nc_toxicwater.jpg");}
   #picture9 .light {background-image: url("images/section_1_gowanus_2.jpeg");}
   #picture10 .light {background-image: url("images/gcf_render.jpg");}
-  #picture11 .light {background-image: url("images/section_3_water_closeup_2.jpeg");}
-  #picture12 .light {background-image: url("images/section_3_water_closeup_2.jpeg");}
-  #picture13 .light {background-image: url("images/gcp_canalBridge.jpg");}
-  #picture14 .light {background-image: url("images/section_3_water_closeup_2.jpeg");}
+  #picture11 .light {background-image: url("images/gcp_canalBridge.jpg");}
+
   
