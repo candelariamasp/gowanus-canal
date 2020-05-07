@@ -327,12 +327,7 @@ var config = {
                     opacity: 0
                 }
             ],
-            onChapterExit: [
-                {
-                    layer: 'gcRezoning',
-                    opacity: 0
-                },
-            ]
+            onChapterExit: []
         },
         {//19 Gowanus Canal Development
             id: 'picture10',
@@ -342,11 +337,7 @@ var config = {
             location: {},
             onChapterEnter: [
                 {
-                    layer: 'waterbodies',
-                    opacity: 0
-                },
-                {
-                    layer: 'nycResidential',
+                    layer: 'flooding',
                     opacity: 0
                 }
             ],
@@ -363,6 +354,10 @@ var config = {
                 //bearing: 45
             },
             onChapterEnter: [
+                {
+                    layer: 'nycResidential',
+                    opacity: 1
+                },
                 {
                     layer: 'flooding',
                     opacity: 0.7
