@@ -40,7 +40,7 @@ body {
 
   #wrapper {
     background-color: rgba(255, 255, 255, 0.8);
-    max-width: 410px;
+    max-width: 460px;
     padding: 2em;
   }
   
@@ -56,7 +56,7 @@ body {
   }
   #header p.byline {
       font-weight: 300;
-      font-size: 0.9em;
+      font-size: 1em;
   }
   #header p {
       font-family: 'Roboto Condensed', sans-serif;;
@@ -92,16 +92,32 @@ body {
       padding: 1em;
       opacity: 0.9;
   }
+  #features p .notes {
+    display: block;
+    text-align: left;
+    padding: 1em;
+    opacity: 0.9;
+}
+  #features p .lighter span.credit {
+    display: block;
+    margin-top: 1em;
+  }
+  #features p .notes span.credit{
+    display: block;
+    margin-top: 1em;
+}
   #features p .below {
       background-color: rgb(255, 255, 255);
       display: block;
-      margin-top: 80%;
-      /*font-style: italic;*/
-      /*font-size: 26px;*/
+      margin-top: 60%;
+      font-style: italic;
+      font-weight: bold;
+      color: black;
+      font-size: 15.6px;
       padding: 1em;
       opacity: 0.9
   }
-  #features .imageCredit {
+  #features .imageCredit, .source {
     font-size: 0.9em;
     margin-top: -5px;
   }
@@ -113,7 +129,7 @@ body {
     margin: 0px auto;
   }
   a, a:hover, a:visited {
-    color: #e96138;
+    color: #006D77;
   }
   .centered {
     width: 50vw;
@@ -153,15 +169,15 @@ body {
     width: 100%;
   }
 
-  #picture2, #picture3, #picture4, #picture5, #picture6, #picture7, #picture8, #picture9, #picture {
+  #picture2, #picture3, #picture4, #picture5, #picture6, #picture7, #picture8, #picture9, #picture10, #picture11, #picture12, #picture13, #picture14 {
     width: 100%;
   }
 
-  #picture2.step.active, #picture3.step.active, #picture4.step.active, #picture5.step.active, #picture6.step.active , #picture7.step.active, #picture8.step.active, #picture9.step.active, #picture10.step.active {
+  #picture2.step.active, #picture3.step.active, #picture4.step.active, #picture5.step.active, #picture6.step.active , #picture7.step.active, #picture8.step.active, #picture9.step.active, #picture10.step.active, #picture11.step.active, #picture12.step.active, #picture13.step.active, #picture14.step.active {
     opacity: 1;
   }
 
-  #picture2 .light, #picture3 .light, #picture4 .light, #picture5 .light, #picture6 .light, #picture7 .light, #picture8 .light, #picture9 .light, #picture10 .light {
+  #picture2 .light, #picture3 .light, #picture4 .light, #picture5 .light, #picture6 .light, #picture7 .light, #picture8 .light, #picture9 .light, #picture10 .light, #picture11 .light, #picture12 .light, #picture12 .light, #picture13 .light, #picture14 .light {
     background-size: cover;
     width: 100%;
     margin-left: -5vw;
@@ -169,11 +185,16 @@ body {
   }
 
   #picture2 .light {background-image: url("images/gch_bargesfloating.jpg");}
-  #picture3 .light {background-image: url("images/section_3_water_closeup_2.jpeg");}
-  #picture4 .light {background-image: url("images/NewtownAerial.jpg");}
-  #picture5 .light {background-image: url("images/section_3_water_closeup_2.jpeg");}
-  #picture6 .light {background-image: url("images/section_1_gowanus_2.jpeg");}
-  #picture7 .light {background-image: url("images/section_3_water_closeup_2.jpeg");}
-  #picture8 .light {background-image: url("images/section_3_water_closeup_2.jpeg");}
-  #picture9 .light {background-image: url("images/gcp_canalBridge.jpg");}
-  #picture10 .light {background-image: url("images/section_3_water_closeup_2.jpeg");}
+  #picture3 .light {background-image: url("images/gcp_newbuilding.jpg");}
+  #picture4 .light {background-image: url("images/section_3_water_closeup_2.jpeg");}
+  #picture5 .light {background-image: url("images/NewtownAerial.jpg");}
+  #picture6 .light {background-image: url("images/nc_past.jpg");}
+  #picture7 .light {background-image: url("images/nc_present.jpg");}
+  #picture8 .light {background-image: url("images/nc_toxicwater.jpg");}
+  #picture9 .light {background-image: url("images/section_1_gowanus_2.jpeg");}
+  #picture10 .light {background-image: url("images/gcf_render.jpg");}
+  #picture11 .light {background-image: url("images/section_3_water_closeup_2.jpeg");}
+  #picture12 .light {background-image: url("images/section_3_water_closeup_2.jpeg");}
+  #picture13 .light {background-image: url("images/gcp_canalBridge.jpg");}
+  #picture14 .light {background-image: url("images/section_3_water_closeup_2.jpeg");}
+  

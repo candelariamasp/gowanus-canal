@@ -111,6 +111,13 @@ config.chapters.forEach((record, idx) => {
         imageCredit.innerHTML = 'Image credit: ' + record.imageCredit;
         chapter.appendChild(imageCredit);
     }
+    // Creates the credit for the vignette
+    if (record.source) {
+        var source = document.createElement('p');
+        source.classList.add('source');
+        source.innerHTML = 'Source: ' + record.source;
+        chapter.appendChild(source);
+    }
     // Creates the description for the vignette
     if (record.description) {
         var story = document.createElement('p');
@@ -311,18 +318,6 @@ map.on("load", function () {
       }
     }, 'waterway-shadow');
     // Add CSO points
-    map.addLayer({
-        'id': 'cso',
-        'type': 'circle',
-        'source': {
-            'type': 'geojson',
-            'data': 'data/cso.geojson'
-        },
-        'paint': {
-          'circle-color': '#4A1109',
-          'circle-opacity': 0
-        }
-    }, firstSymbolId);
     // Add the Flooding Layer
     map.addLayer({
         'id': 'flooding',
@@ -334,6 +329,18 @@ map.on("load", function () {
         'paint': {
             'fill-color': '#98d6d2',
             'fill-opacity': 0
+        }
+    }, firstSymbolId);
+    map.addLayer({
+        'id': 'cso',
+        'type': 'circle',
+        'source': {
+            'type': 'geojson',
+            'data': 'data/cso.geojson'
+        },
+        'paint': {
+          'circle-color': '#4A1109',
+          'circle-opacity': 0
         }
     }, firstSymbolId);
 
