@@ -15,7 +15,7 @@ body {
     padding: 2vh 2vh 5vh 2vh;
   }
   audio {
-    margin-top: 60%;
+    margin-top: 40%;
   }
   #features {
     padding-top: 80vh;
@@ -109,7 +109,7 @@ body {
   #features p .below {
       background-color: rgb(255, 255, 255);
       display: block;
-      margin-top: 60%;
+      margin-top: 40%;
       font-style: italic;
       font-weight: bold;
       color: black;
